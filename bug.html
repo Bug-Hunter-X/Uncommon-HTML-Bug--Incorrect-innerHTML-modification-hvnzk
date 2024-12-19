@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrectly using innerHTML to modify the content of an element that doesn't exist yet.
+    document.getElementById('myDiv').innerHTML = "<p>This is a paragraph.</p>";
+  </script>
+</body>
+</html>
